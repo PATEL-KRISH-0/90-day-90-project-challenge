@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-family: Poppins;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 319px;
+    padding: 20px;
+    background-color: black;
+    margin-top: 30px;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header svg {
+    fill: white;
+    width: 23px;
+    margin-left: 10px;
+}
+
+.like path {
+    stroke: white;
+    stroke-width: 2;
+    transition: fill 0.3s;
+    cursor: pointer;
+}
+
+.PInfo {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-top: 36px;
+}
+
+.PInfo img {
+    width: 130px;
+    border-radius: 50%;
+}
+
+.PInfo h4 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    margin-top: 11px;
+}
+
+.PInfo p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.PInfo button {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding: 12px 22px;
+    color: black;
+    border: none;
+    border-radius: 27px;
+    background: white;
+}
+
+.sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media div svg {
+    width: 55px;
+}
+
+.social-media div {
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.social-media div div {
+    margin-top: 10px;
+}
+
+.followers {
+    font-size: 17px;
+}
+
+.S-text {
+    margin-top: 2px;
+    font-size: 16px;
+}
