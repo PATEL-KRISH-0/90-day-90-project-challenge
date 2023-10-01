@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+.btns{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+svg{
+    fill: white;
+    margin-right: 10px;
+}
+.btn{
+    padding: 15px 30px;
+    background-color: rgb(252, 110, 110) ;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:min-content;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: 6px 6px 0px rgb(206, 0, 0);
+    transition: all 0.01s;
+    color: white;
+}
+.btn:active{
+    transform: translateX(2px) translatey(2px);
+    box-shadow: 4px 4px 0px rgb(206, 0, 0);
+}
