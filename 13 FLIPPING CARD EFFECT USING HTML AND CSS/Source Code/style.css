@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Poppins;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart {
+    display: flex;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    width: 400px;
+    border-radius: 20px;
+    transition: all 0.4s;
+    position: fixed;
+    top: 0;
+    font-size: 20px;
+}
+
+.cart:hover {
+    transform: rotateY(180deg);
+}
+
+.cart:hover .fir {
+    display: none;
+}
+
+.cart:hover .sec {
+    display: block;
+    transform: rotateY(180deg);
+}
+
+.sec {
+    display: none;
+}
