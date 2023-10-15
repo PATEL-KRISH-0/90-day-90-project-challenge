@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(218, 218, 255);
+}
+
+svg {
+    width: 402px;
+}
+
+main {
+    background-color: rgb(14, 0, 63);
+    width: inherit;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 10px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 43% 57%;
+    grid-template-rows: 1fr auto;
+    justify-content: space-between;
+    align-self: center;
+    margin: 20px;
+
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: white;
+    grid-column: 1 / 3;
+
+    display: flex;
+    justify-content: center;
+}
+
+.con {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.c {
+    display: flex;
+    flex-flow: column;
+    margin: 10px 0px;
+}
+
+.text {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 4px;
+}
+
+.bar {
+    width: 100%;
+    border-radius: 100px;
+    border: 2px solid black;
+}
+
+.html {
+    color: red;
+}
+
+.html .bar {
+    width: 90%;
+    border: 2px solid red;
+}
+.html .text {
+    width: 90%;
+}
+
+.Css {
+    color: red;
+}
+
+.Css .bar {
+    width: 70%;
+    border: 2px solid rgb(255, 134, 34);
+}
+.Css .text {
+    width: 70%;
+}
+
+.JavaScript {
+    color: rgb(229, 255, 0);
+}
+
+.JavaScript .bar {
+    width: 80%;
+    border: 2px solid rgb(229, 255, 0);
+}
+.JavaScript .text {
+    width: 80%;
+}
+
+.NodeJs {
+    color: green;
+}
+
+.NodeJs .bar {
+    width: 65%;
+    border: 2px solid green;
+}
+.NodeJs .text {
+    width: 65%;
+}
+
+.MongoDB {
+    color: green;
+}
+
+.MongoDB .bar {
+    width: 99%;
+    border: 2px solid green;
+}
+.MongoDB .text {
+    width: 99%;
+}
+
+.SQL {
+    color: white;
+}
+
+.SQL .bar{
+    width: 76%;
+    border: 2px solid white;
+}
+.SQL .text{
+    width: 76%;
+}
