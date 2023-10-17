@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #0e0260;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    align-self: center;
+    font-size: 30px;
+    color: white;
+    margin: 15px 0px;
+    font-weight: bold;
+}
+
+.card-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    background-color: white;
+    flex-flow: column;
+    margin: 10px;
+    align-items: center;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+
+}
+
+.card:hover {
+    transform: scale(1.04);
+}
+
+.card img {
+    width: 250px;
+}
+
+.info {
+    padding: 10px;
+}
+
+.log {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.gog {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.gog img {
+    width: 25px;
+    border-radius: 50%;
+}
+
+.gog span {
+    margin-left: 10px;
+    font-weight: bold;
+}
