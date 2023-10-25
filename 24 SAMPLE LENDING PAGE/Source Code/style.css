@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    font-family: Poppins;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.navbar {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(17, 4, 32);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left svg {
+    fill: white;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.checkBtn {
+    display: none;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.list li a {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.list li a:hover {
+    background-color: white;
+    color: black;
+}
+
+#check {
+    display: none;
+}
+
+section {
+    padding: 20px;
+    justify-content: space-between;
+    display: grid;
+    background-color: rgb(195, 213, 255);
+    grid-template-columns: 50% 50%;
+
+}
+
+section>img {
+    width: 500px;
+}
+
+section>div {
+    padding: 20px;
+}
+
+section>div>h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+section>div>p {
+    margin: 15px 0px;
+    font-size: 20px;
+}
+
+.btn{
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1.6rem 3.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-right: 30px;
+}
+
+.btn:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+
+@media screen and (max-width: 805px) {
+    section {
+        grid-template-columns: 100%;
+    }
+
+    section>img {
+        width: 400px;
+    }
+
+    .checkBtn {
+        display: flex;
+    }
+
+    .list {
+        flex-direction: column;
+        position: fixed;
+        left: 100%;
+        height: 100vh;
+        top: 74px;
+        width: 100%;
+        background: #110420;
+        transition: left 0.5s;
+    }
+
+    .list li {
+        margin: 20px 0;
+    }
+
+    #check:checked~.list {
+        left: 0 !important;
+
+    }
+
+}
