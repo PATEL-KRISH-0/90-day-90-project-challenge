@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.icons {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.icons a {
+    margin: 10px;
+    margin-right: 15px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    width: 35px;
+    height: 35px;
+    border: 2px solid blue;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.icons a:hover {
+    fill: white;
+}
+
+.icons a::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    background:blue;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+    z-index: -1;
+}
+
+.icons a:hover::before {
+    width: 100%;
+}
+
+.icons a svg {
+    background: transparent;
+    fill: blue;
+    width: 16px;
+}
+
+.icons a:hover svg {
+    fill: white;
+}
+
+.nav-Side {
+    display: flex;
+}
+
+.nav {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    transition: all 4s;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-List-Itoms-A {
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 1.6rem;
+    margin: 15px;
+}
+
+.nav-List-Itoms-A:hover {
+    color: blue;
+}
+
+.nav-List-Itoms-A::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: blue;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+}
+
+.nav-List-Itoms-A:hover::before {
+    transform: scaleX(1);
+}
+
+.text {
+    color: white;
+    font-size: 18px;
+}
