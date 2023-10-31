@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(232, 232, 255);
+}
+
+main {
+    display: grid;
+    justify-content: center;
+    padding: 40px;
+    grid-template-columns: 50% 50%;
+}
+
+img {
+    width: 500px;
+    height: 400px;
+}
+
+div {
+    padding: 30px;
+    display: flex;
+    flex-flow: column;
+}
+
+p {
+    font-size: 17px;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 50px;
+}
