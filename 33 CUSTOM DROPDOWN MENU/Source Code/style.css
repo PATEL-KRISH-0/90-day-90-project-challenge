@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    transition: all .5s;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(190, 201, 255);
+    
+}
+main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-top: 40px;
+    background-color: rgb(190, 201, 255);
+}
+
+.manu {
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid;
+}
+
+.manu span {
+    font-size: 18px;
+}
+
+.manu svg {
+    height: 2rem;
+}
+.roted{
+    transform: rotate(180deg);
+}
+
+.hide {
+    flex-flow: column;
+    position: absolute;
+    visibility: hidden;
+    top: -150px;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 10px;
+    width: 300px;
+    background-color: white;
+    margin-top: 10px;
+    z-index: -1;
+}
+
+.active {
+    visibility: visible;
+    top: 90px;
+}
+
+.card {
+    border-radius: 10px;
+    display: flex;
+    margin: 4px 0px;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateX(5px);
+}
+
+img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.html:hover {
+    background-color: rgb(255, 164, 164);
+}
+
+.css:hover {
+    background-color: rgb(164, 232, 255);
+}
+
+.js:hover {
+    background-color: rgb(255, 237, 164);
+}
